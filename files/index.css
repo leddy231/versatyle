@@ -1,0 +1,219 @@
+body, h1, h2 {
+	margin: 0;
+	background-color: #424242;
+	font-family: 'Roboto', serif;
+}
+
+#contactForm {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-top: 100px;
+}
+
+#contactForm form {
+	padding: 10px;
+	padding-top: 20px;
+	width: auto;
+	height: auto;
+	background-color: #212121;
+	border-radius: 5px;
+}
+
+#contactForm form p {
+	color: #FF9800;
+	margin: 0;
+	font-size: 20px;
+}
+
+#contactForm form input, #contactForm form textarea {
+	color: white;
+	background-color: #424242;
+	border: 5px solid #424242;
+	margin-bottom: 10px;
+	width: 200px;
+	font-size: 15px;
+}
+
+#contactForm form #Submit {
+	color: #FF9800;
+	margin-bottom: 0;
+}
+
+.cardList {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	overflow: scroll;
+}
+
+.projectCard {
+	display: flex;
+	background-color: #212121;
+	padding: 10px;
+	margin: 16px;
+	margin-bottom: 0;
+	border-radius: 5px;
+	width: 50%;
+}
+
+.projectCard:nth-child(even) {
+	flex-direction: row;
+	float: right;
+}
+
+.projectCard:nth-child(odd) {
+	flex-direction: row-reverse;
+	float: left;
+}
+
+.projectCard p {
+	color: #FF9800;
+	padding-left: 10px;
+	padding-right: 10px;
+	order: 2;
+}
+
+.projectCard img {
+	margin: 10px;
+	order: 1;
+	object-fit: contain;
+	height: 50px;
+}
+
+#home {
+	color: #FF9800;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+
+#home div {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+#home div div {
+	background-color: #212121;
+	border-radius: 5px;
+	padding: 15px;
+	margin: 10px;
+	clip-path: circle(0% at 50% 50%);
+	transition: clip-path 2s;
+	z-index: -1;
+}
+
+#home div div.reveal {
+	clip-path: circle(100% at 50% 50%);
+}
+
+#home h1, #home h2 {
+	background-color: #212121;
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+header, footer {
+	position: fixed;
+	width: 100%;
+	overflow: hidden;
+	background-color: #212121;
+}
+
+header a, header #logo, header span, footer a, footer #logo, footer span {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 12px;
+	text-decoration: none;
+	color: #FF9800;
+	height: 30px;
+	line-height: 30px;
+}
+
+header a:hover, footer a:hover {
+	background-color: #FF9800;
+	color: #212121;
+}
+
+header .icon, footer .icon {
+	display: none;
+}
+
+header {
+	top: 0;
+}
+
+footer {
+	bottom: 0;
+}
+
+footer img {
+	height: 30px;
+}
+
+footer span {
+	padding: 12px;
+	height: 30px;
+}
+
+footer #links {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+	.projectCard {
+		width: auto;
+	}
+	.projectCard:nth-child(even), .projectCard:nth-child(odd) {
+		flex-direction: row;
+		float: left;
+	}
+	footer span {
+		display: none;
+	}
+	footer #links {
+		float: none;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	header {
+		max-height: 60px;
+		transition: max-height 0.25s ease-out;
+	}
+	header a {
+		display: none;
+	}
+	header a.icon {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30px;
+		height: 30px;
+		display: block;
+	}
+	header.open {
+		transition: max-height 0.25s ease-in;
+		max-height: 100%;
+		position: absolute;
+	}
+	header.open #logo {
+		display: none;
+	}
+	header.open a {
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	header.open a.icon {
+		text-align: center;
+	}
+}

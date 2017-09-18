@@ -1,0 +1,26 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="448.17" height="97.8" viewBox="0 0 448.17 97.8">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 68.12px;
+        font-family: Roboto;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #f7941e;
+      }
+
+      .cls-2 {
+        letter-spacing: -4px;
+      }
+
+      .cls-3 {
+        stroke: #f7941e;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <title>versatyle</title>
+  <text class="cls-1" transform="translate(168.22 79.34)">RS<tspan class="cls-2" x="82.35" y="0">A</tspan><tspan x="122.5" y="0">T</tspan><tspan x="163.68" y="0">YLE</tspan></text>
+  <polyline class="cls-3" points="129.23 79.94 56.75 79.94 0.96 0.5 40.28 0.5 76.41 52.21 112.72 0.5 185.18 0.5 171.86 19.39 138.78 19.39 130.71 30.77 163.92 30.66 150.48 49.66 117.4 49.66 109.46 61.04 142.54 61.04 129.23 79.94 56.29 79.29"/>
+</svg>
