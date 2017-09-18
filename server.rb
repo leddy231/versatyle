@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'JSON'
+require 'json'
 
 ROOT = File.dirname(__FILE__) + "/files/"
 
