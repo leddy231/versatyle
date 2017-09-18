@@ -165,10 +165,11 @@ footer {
 			float: left;
 		}
 		p {
-			font-size: $navMobile / 2;
+			font-size: $navMobile / 4;
 		}
 		img {
-			height: $navMobile;
+			height: auto;
+			width: $navMobile * 4;
 		}
 	}
 	header, footer {
@@ -208,7 +209,6 @@ footer {
 		&.open {
 			transition: max-height 0.25s ease-in;
 			max-height: 100%;
-			position: absolute;
 			#logo {
 				display: none;
 			}

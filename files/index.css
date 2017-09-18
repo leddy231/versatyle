@@ -178,10 +178,11 @@ footer #links {
 		float: left;
 	}
 	.projectCard p {
-		font-size: 62.5px;
+		font-size: 31.25px;
 	}
 	.projectCard img {
-		height: 125px;
+		height: auto;
+		width: 500px;
 	}
 	header a, header #logo, header p, header img, header .icon, footer a, footer #logo, footer p, footer img, footer .icon {
 		height: 125px;
@@ -215,7 +216,6 @@ footer #links {
 	header.open {
 		transition: max-height 0.25s ease-in;
 		max-height: 100%;
-		position: absolute;
 	}
 	header.open #logo {
 		display: none;
