@@ -2,7 +2,7 @@ $secondColor: #424242; // Material Grey 800
 $secondDark: #212121; //Metrial Grey 900
 $mainColor: #FF9800; //Material Orange 500
 
-$navHeight: 30px;
+$navHeight: 50px;
 
 body, h1, h2 {
 	margin: 0;
@@ -43,9 +43,8 @@ body, h1, h2 {
 }
 
 .cardList {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	overflow: scroll;
+	margin-top: $navHeight * 1.5;
+	margin-bottom: $navHeight * 1.5;
 }
 
 .projectCard {
@@ -115,15 +114,17 @@ header, footer {
 	width: 100%;
   overflow: hidden;
   background-color: $secondDark;
-	a, #logo, span {
+	a, #logo, p, img{
 	  float: left;
 	  display: block;
 	  text-align: center;
+		margin: 0;
 	  padding: 12px;
 	  text-decoration: none;
 		color: $mainColor;
 		height: $navHeight;
 		line-height: $navHeight;
+		font-size: $navHeight - 20px;
 	}
 
 	a:hover {
@@ -143,18 +144,14 @@ header {
 footer {
 	bottom: 0;
 	img {
-		height: $navHeight;
-	}
-	span {
-		padding: 12px;
-		height: $navHeight;
+		padding: 0;
 	}
 	#links, {
 		float: right;
 	}
 }
 
-@media screen and (orientation:portrait) {
+@media screen and (max-width: 600px) {
 	.projectCard {
 		width: auto;
 		&:nth-child(even), &:nth-child(odd) {
@@ -164,7 +161,7 @@ footer {
 	}
 
 	footer {
-		span{
+		#copyright {
 			display: none;
 		}
 		#links {

@@ -41,9 +41,8 @@ body, h1, h2 {
 }
 
 .cardList {
-	margin-top: 50px;
-	margin-bottom: 50px;
-	overflow: scroll;
+	margin-top: 75px;
+	margin-bottom: 75px;
 }
 
 .projectCard {
@@ -127,15 +126,17 @@ header, footer {
 	background-color: #212121;
 }
 
-header a, header #logo, header span, footer a, footer #logo, footer span {
+header a, header #logo, header p, header img, footer a, footer #logo, footer p, footer img {
 	float: left;
 	display: block;
 	text-align: center;
+	margin: 0;
 	padding: 12px;
 	text-decoration: none;
 	color: #FF9800;
-	height: 30px;
-	line-height: 30px;
+	height: 50px;
+	line-height: 50px;
+	font-size: 30px;
 }
 
 header a:hover, footer a:hover {
@@ -156,19 +157,14 @@ footer {
 }
 
 footer img {
-	height: 30px;
-}
-
-footer span {
-	padding: 12px;
-	height: 30px;
+	padding: 0;
 }
 
 footer #links {
 	float: right;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 600px) {
 	.projectCard {
 		width: auto;
 	}
@@ -176,7 +172,7 @@ footer #links {
 		flex-direction: row;
 		float: left;
 	}
-	footer span {
+	footer #copyright {
 		display: none;
 	}
 	footer #links {
@@ -186,7 +182,7 @@ footer #links {
 		justify-content: center;
 	}
 	header {
-		max-height: 60px;
+		max-height: 100px;
 		transition: max-height 0.25s ease-out;
 	}
 	header a {
@@ -196,8 +192,8 @@ footer #links {
 		position: absolute;
 		top: 0;
 		right: 0;
-		width: 30px;
-		height: 30px;
+		width: 50px;
+		height: 50px;
 		display: block;
 	}
 	header.open {
