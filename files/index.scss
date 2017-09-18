@@ -151,7 +151,7 @@ footer {
 	}
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (orientation: portriat) {
 	.projectCard {
 		width: auto;
 		&:nth-child(even), &:nth-child(odd) {
