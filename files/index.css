@@ -165,6 +165,31 @@ footer #links {
 }
 
 @media screen and (orientation: portrait) {
+	h1 {
+		font-size: 120px;
+	}
+	h2 {
+		font-size: 60px;
+	}
+	#contactForm {
+		display: block;
+		margin-top: 149px;
+		margin-bottom: 149px;
+	}
+	#contactForm form {
+		background-color: #424242;
+	}
+	#contactForm form p {
+		font-size: 60px;
+	}
+	#contactForm form input, #contactForm form textarea {
+		color: white;
+		background-color: #212121;
+		border: 5px solid #212121;
+		margin-bottom: 10px;
+		width: 100%;
+		font-size: 60px;
+	}
 	.cardList {
 		margin-top: 161px;
 		margin-bottom: 300px;
@@ -195,7 +220,6 @@ footer #links {
 	footer #links {
 		float: none;
 		display: flex;
-		align-items: center;
 		justify-content: center;
 	}
 	header {

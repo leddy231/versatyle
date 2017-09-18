@@ -153,6 +153,28 @@ footer {
 }
 
 @media screen and (orientation:portrait) {
+	h1 {font-size: 120px;}
+	h2 {font-size: 60px;}
+	#contactForm {
+		display: block;
+		margin-top: $navMobile + 12 * 2;
+		margin-bottom: $navMobile + 12 * 2;
+		form {
+			background-color: $secondColor;
+			p {
+				font-size: 60px;
+			}
+			input, textarea {
+				color: white;
+				background-color: $secondDark;
+				border: 5px solid $secondDark;
+				margin-bottom: 10px;
+				width: 100%;
+				font-size: 60px;
+			}
+		}
+	}
+
 	.cardList {
 		margin-top: $navMobile + 12 * 3;
 		margin-bottom: 300px;
@@ -187,7 +209,6 @@ footer {
 		#links {
 			float: none;
 			display: flex;
-			align-items: center;
 			justify-content: center;
 		}
 	}
