@@ -164,13 +164,16 @@ footer #links {
 	float: right;
 }
 
-@media screen and (orientation: portriat) {
+@media screen and (orientation: portrait) {
 	.projectCard {
 		width: auto;
 	}
 	.projectCard:nth-child(even), .projectCard:nth-child(odd) {
 		flex-direction: row;
 		float: left;
+	}
+	a, #logo, p, img {
+		height: 100px;
 	}
 	footer #copyright {
 		display: none;

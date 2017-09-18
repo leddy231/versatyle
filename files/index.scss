@@ -151,13 +151,16 @@ footer {
 	}
 }
 
-@media screen and (orientation: portriat) {
+@media screen and (orientation:portrait) {
 	.projectCard {
 		width: auto;
 		&:nth-child(even), &:nth-child(odd) {
 			flex-direction: row;
 			float: left;
 		}
+	}
+	a, #logo, p, img{
+		height: $navHeight * 2;
 	}
 
 	footer {
